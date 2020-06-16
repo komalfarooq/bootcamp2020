@@ -23,10 +23,10 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: instal nodejs
-    uses: action/setup.node@v2-beta
-    with:
-    node-version: 12
-    name : install surge
-    run: npm instal -g surge
-   name : run surge
-    run: surge ./ bootcampkomalnew.surge.sh --token ${{secrets.token}}
+      uses: action/setup.node@v2-beta
+      with:
+        node-version: 12
+    - name: install surge
+      run: npm install -g surge
+    - name: run surge
+      run: surge ./ bootcampkomalnew.surge.sh --token ${{secrets.token}}
