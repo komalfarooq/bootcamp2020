@@ -28,5 +28,5 @@ jobs:
     node-version: 12
     name : install surge
     run: npm instal -g surge
-    name: Run surge 
+   name : run surge
     run: surge ./ bootcampkomalnew.surge.sh --token ${{secrets.token}}
